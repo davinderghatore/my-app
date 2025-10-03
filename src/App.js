@@ -35,10 +35,12 @@ function App() {
       {showinput?"cancel":"Add project"}
 
     </button>
+    {showinput && (
     <form onSubmit={saveToDoList}>
       <input type="text" name='project' placeholder="Add a new task" />
       <button type="submit">Add</button>  
     </form>
+    )}
     <ul>
       {list}
       </ul>
